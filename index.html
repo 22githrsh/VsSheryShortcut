@@ -41,7 +41,8 @@
 
     /* LAYOUT */
     .main{
-      min-height:100vh;
+
+     
       display:flex;
       justify-content:center;
       position:relative;
@@ -81,7 +82,7 @@
 
     /* HERO */
     .hero{
-      min-height:100vh;
+      min-height:60vh;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -379,6 +380,49 @@
         gap: 0px;
       }
     }
+    /* vscode footer section */
+.vscode-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4vh;
+
+}
+
+.vscode-footer h1 {
+  font-size: 4vw;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  line-height: 1;
+  user-select: none;
+  margin-top: 15rem;
+}
+
+/* -------- Responsive -------- */
+
+@media (max-width: 768px) {
+  .vscode-footer h1 {
+    font-size: 14vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .vscode-footer {
+    padding-bottom: 6vh;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  .vscode-footer h1 {
+    font-size: 9vw;
+    flex-shrink: 0;
+    margin-top: 9rem;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -411,6 +455,9 @@
           <button onclick="openMac()">Mac</button>
         </div>
       </div>
+    </section>
+    <section class="vscode-footer">
+      <h1>Visual Studio Code</h1>
     </section>
 
     <!-- WINDOWS -->
